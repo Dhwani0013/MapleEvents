@@ -8,6 +8,7 @@ import Portfolio from "./Components/Portfolio/portfolio.js";
 import Events from "./Components/Events/events.js";
 import {BrowserRouter as Router, Routes , Route} from  "react-router-dom"
 import Layout from "./Components/Layout/layout.js";
+import BookUs from "./Components/BookUs/bookus.js";
 
 const App = () => {
 return (
@@ -19,6 +20,7 @@ return (
     <Route path="/services" element={<Services />} />
     <Route path="/portfolio" element={<Portfolio />} />
     <Route path="/events" element={<Events />} />
+    <Route path="/bookus" element={<BookUs />} />
     </Routes>
   </Layout>
   </Router>

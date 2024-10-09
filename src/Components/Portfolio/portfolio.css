@@ -1,0 +1,48 @@
+/* Portfolio.css */
+
+/* Container for the whole section */
+.portfolio-container {
+   
+    justify-content: space-between; /* Space between text and image */
+    align-items: center; /* Vertically align the text and image */
+    padding: 20px; /* Add padding around the section */
+    gap: 20px; /* Space between text and image */
+  }
+  
+  /* Text section */
+  .portfolio-text {
+    text-align: center;
+    padding-right: 20px;
+  }
+  
+  .portfolio-text h2 {
+    margin-bottom: 15px;
+    font-size: 2rem;
+  }
+  
+  .portfolio-mergecontainer {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+  
+  .portfolio-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 10px;
+  }
+  
+  /* Image section */
+  .portfolio-image {
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
+  }
+  
+  /* Style for the image with rounded corners */
+  .rounded-image {
+    width: 100%; /* Adjust width based on container size */
+    max-width: 600px; /* Limit the image size */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 20px; /* Rounded corners */
+    object-fit: cover; /* Maintain aspect ratio while covering the area */
+  }
+  

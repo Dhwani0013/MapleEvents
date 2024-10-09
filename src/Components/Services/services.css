@@ -1,8 +1,39 @@
-/* ImageGrid.css */
+/* services.css */
 
-/* Remove the border and shadow from the entire Card */
-.services-cards {
-  border: none; /* Remove the default Bootstrap card border */
-  box-shadow: none; /* Remove the shadow around the card */
-  border-width: 0;
+/* Container for the service items */
+.allServices {
+  padding: 50px; /* Add padding around the container */
+}
+
+/* Arrow button styles */
+.arrow-button {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center the arrow inside the button */
+  width: 40px; /* Set a fixed width for the button */
+  height: 40px; /* Set a fixed height for the button */
+  border-radius: 50%; /* Make the button round */
+  border: none; /* Remove border */
+  background-color: transparent; /* Make the background transparent */
+  cursor: pointer; /* Change cursor to pointer */
+  margin-left: 10px; /* Space between text and arrow button */
+}
+
+/* Adjust arrow styling */
+.arrow-button .arrow {
+  font-size: 1.5rem; /* Adjust the size of the arrow */
+  margin: 0; /* Remove margin */
+}
+.services-image {
+ 
+  width: 90%;
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 25px; /* Add rounded corners */
+}
+
+.services-heading{
+  text-align: center;
+}
+.services-description {
+  text-align: center;
 }

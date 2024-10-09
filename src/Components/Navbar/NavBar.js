@@ -2,8 +2,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './navBar.css'; 
+import BookUs from '../BookUs/bookus';
 
 const Navbar = () => {
+
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <div className="container-fluid">
@@ -23,7 +25,9 @@ const Navbar = () => {
                             <Link className="nav-link" to="/events">Events</Link>
                         </li>
                     </ul>
-                    <button className="btn custom-button">Book Us</button>
+                    <Link to="/bookus"> {/* Use Link instead of button */}
+                        <button className="btn custom-button">Book Us</button>
+                    </Link>
                 </div>
             </div>
         </nav>
