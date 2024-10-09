@@ -1,6 +1,6 @@
 // MainImage.js
 import React from 'react';
-import './eventImg.scss'; 
+import './eventImg.css'; 
 import backgroundImg from '../../Images/sample.jpg';
 
 const EventImg = () => {

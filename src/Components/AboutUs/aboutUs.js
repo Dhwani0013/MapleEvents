@@ -1,5 +1,5 @@
 import React from 'react';
-import './aboutUs.scss'; // External CSS for styling
+import './aboutUs.css'; // External CSS for styling
 import aboutUsImage from '../../Images/i2.jpg'; // Adjust the path to your image
 
 const AboutUs = () => {

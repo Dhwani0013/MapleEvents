@@ -1,5 +1,4 @@
 import React from "react";
-
 import NavBar from "./Components/Navbar/NavBar";
 import AboutUs from "./Components/AboutUs/aboutUs";
 import Footer from "./Components/Footer/footer";
@@ -7,11 +6,8 @@ import EventImg from "./Components/EventImg/eventImg";
  const HomePage = () =>{
     return (
         <div>
-      <NavBar />
       <EventImg/>
       <AboutUs/>
-      <Footer/>
-    
     </div>
         
     )
