@@ -1,48 +1,62 @@
-/* Portfolio.css */
+/* ImageGallery.css */
 
-/* Container for the whole section */
-.portfolio-container {
-   
-    justify-content: space-between; /* Space between text and image */
-    align-items: center; /* Vertically align the text and image */
-    padding: 20px; /* Add padding around the section */
-    gap: 20px; /* Space between text and image */
-  }
-  
-  /* Text section */
-  .portfolio-text {
-    flex: 1; /* Take up 50% of the width */
-    padding-right: 20px;
-  }
-  
-  .portfolio-text h2 {
-    margin-bottom: 15px;
-    font-size: 2rem;
-  }
-  
-  .portfolio-mergecontainer {
-    margin-left: 60px;
-    margin-right: 60px;
-  }
-  
-  .portfolio-text p {
-    font-size: 1.2rem;
-    line-height: 1.6;
-    margin-bottom: 10px;
-  }
-  
-  /* Image section */
-  .portfolio-image {
-    display: flex;
-    justify-content: flex-end; /* Align image to the right */
-  }
-  
-  /* Style for the image with rounded corners */
-  .rounded-image {
-    width: 100%; /* Adjust width based on container size */
-    max-width: 600px; /* Limit the image size */
-    height: auto; /* Maintain aspect ratio */
-    border-radius: 20px; /* Rounded corners */
-    object-fit: cover; /* Maintain aspect ratio while covering the area */
-  }
-  
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+  gap: 10px;
+  padding: 10px;
+}
+
+.thumbnail {
+  position: relative;
+  cursor: pointer;
+}
+
+.thumbnail img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.zoom-icon {
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 18px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 4px;
+  border-radius: 50%;
+}
+
+/* Modal styles */
+.modal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+  outline: none;
+}
+
+.modal-image {
+  max-width: 90vw;
+  max-height: 90vh;
+  border-radius: 8px;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 24px;
+  cursor: pointer;
+}
